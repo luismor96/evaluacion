@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">    
+    <title>Órdenes de venta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+<body>
+    <header class="header">
+        <h1>Bienvenido a tiendaenlinea.com</h1>
+        <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#CD5C5C" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="6" cy="19" r="2" />
+            <circle cx="17" cy="19" r="2" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l14 1l-1 7h-13" />
+          </svg></p>
+        <p>En esta tienda podrás seleccionar tus productos favoritos, con solo hacer unos clicks.</p>
+    </header>
+
+    <div class="seccion">
+        <form class="formulario" id="formulario">
+            <fieldset>
+                <legend>Favor de llenar todos los campos</legend>
+                <div class="contenedor_info">
+                    <div class="info">
+                        <label>Cliente: </label>
+                        <input class = "input" id= "cliente" type="text" placeholder="ID de cliente p. ej. 1350">
+                    </div>
+                    
+                    <div class="info">
+                        <label>Producto: </label>
+                        <input class = "input" id="producto" type="text" placeholder="ID de producto p. ej. 131">
+                        </input>
+                    </div>
+                    
+                    <div class="info">
+                            <label>Cantidad: </label>
+                            <input class = "input" type="number" id="cantidad" placeholder="1" min="1" max="100">
+                    </div>
+                    </div>
+                    
+                    <div class="agregar_carrito">
+                        <button class="boton" id="agregar" type="submit">Agregar al carrito</button>
+                    </div>
+
+                    <div class="total">
+                        <p>Resumen de compra: </p>
+                        <div class= "cantidades" id="listap">
+                        </div>
+                
+                        <p>Total: </p>
+                        <div class= "cantidadtotal" id="totalp">
+                        </div>
+
+                        <p>Datos del cliente: </p>
+                        <div class= "cantidades" id="datosc">
+                        </div>
+                    </div>
+
+                    <div class="entrega">
+                        <p>Selecciona tu fecha y hora de envío</p>
+                        <form class="formulario">
+                            <div class="info">
+                                <label>Fecha: </label>
+                                <input class="input" id="fecha" type ="date">
+                            </div>
+
+                            <div class="info">
+                                <label>Hora: (Seleccione un horario entre 9:00 y 18:00 hrs)</label>
+                                <input class="input" id="hora" type ="time" min="09:00" max="20:00">
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="finalizar">
+                        <button class="boton" id="finalizar" type="submit">Realizar pedido</button>
+                    </div>
+                
+                
+            </fieldset>
+        </form>
+    </div> 
+
+    <script src="calcular.js"></script>
+    <script src="jquery/jquery-3.2.1.slim.min.js"></script>
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+
+</body>
+
+
+
+</html>

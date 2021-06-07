@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color:indianred; 
+    font-family: 'Arvo', serif;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color:beige;
+}
+
+.header p{
+    font-family:monospace;
+    text-align: center;
+    font-weight: bold;
+
+}
+.navback {
+    background-color:indianred;
+}
+
+.tabs{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.contenedor{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.boton{
+    background-color:lightslategray;
+    color:white;
+    padding:10px 25px;
+    margin-top:10px;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    border:none;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.formulario{
+    background-color:mediumturquoise;
+    width: min(400px, 100%);
+    margin:0 auto;
+    padding:20px;
+    border-radius: 10px;
+}
+.formulario fieldset{
+    border:none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 20px;
+    text-transform:uppercase;
+    font-weight: 700;
+    margin-bottom:20px;
+    color:black;
+}
+
+
+.info{
+    margin-bottom: 10px;
+}
+
+.info label{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+
+}
+
+.input{
+    width:100%;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.agregar_carrito .boton{
+    width:100%;
+}
+
+.finalizar .boton{
+    width:100%;
+}
+
+.total p{
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.cantidades{
+    text-align: right;
+    color:black;
+    font-weight:inherit;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+
+.cantidadtotal{
+    text-align: right;
+    color: red;
+    font-weight:bolder;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+
+
+.seccion{
+    margin-top: 20px;;
+}
+
+.entrega p{
+    text-align: center;
+    font-size: 20px;
+    text-transform:uppercase;
+    font-weight: 700;
+    margin-bottom:20px;
+    color:black;
+}
